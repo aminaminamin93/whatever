@@ -38,7 +38,6 @@ Route::get('/addusers', function(){
 	$users = new User;
 	$users->name = 'mohd aminuddin';
 	$users->email = 'mohdaminuddinali@gmail.com';
-	$users->password = bcyrpt('1224ty1lmy');
 	$users->save();
 
 	if($users){

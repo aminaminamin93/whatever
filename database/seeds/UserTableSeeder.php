@@ -19,8 +19,6 @@ class UserTableSeeder extends Seeder
                     ['name' => 'ali', 'email' => 'alibaba@gmail.com','password' => bcrypt('superadmin')]
     				);
 
-        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
-    	DB::table('users')->truncate();
 
     	foreach ($users as $user) {
     		 DB::table('users')->insert([

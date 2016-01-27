@@ -10,7 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+use App\Users;
 Route::get('/', function () {
     return \View::make('/admin/home/index')->with('title', 'Home');
 });
@@ -21,6 +21,10 @@ Route::get('/products', function(){
 
 Route::get('/orders', function(){
 	return \View::make('/admin/orders/index')->with('title', 'Orders');
+});
+
+Route::get('/users', function(){
+	return Users::all();
 });
 
 // Route::get('/home', function(){

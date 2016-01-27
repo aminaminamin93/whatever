@@ -25,7 +25,10 @@ Route::get('/orders', function(){
 Route::get('/users', function(){
 	
 	if(User::all()){
-		return "true";
+		$users = \DB::table('users')->get();
+		foreach ($users as $user) {
+			echo 'Name: '.$user->name.'<br>Email :'.$user->email.'<br>';
+		}
 	}else{
 		return "false";
 	}
@@ -39,7 +42,7 @@ Route::get('/addusers', function(){
 	$users->save();
 
 	if($users){
-		return User::all();
+		return 'new users added';
 	}
 });
 

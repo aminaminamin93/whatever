@@ -23,10 +23,7 @@ Route::get('/orders', function(){
 	return \View::make('/admin/orders/index')->with('title', 'Orders');
 });
 
-Route::get('/users', function(){
-	$users =  User::all();
-	if($users){return "true";}else{return "false";}
-});
+
 
 // Route::get('/home', function(){
 // 	return 'This is home';

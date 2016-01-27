@@ -4,9 +4,10 @@
 <div id="page-wrapper">
 	<div class="row">
           <div class="col-lg-12">
-            <h1>Dashboard <small>Statistics Overview</small></h1>
+            <h1>Orders <small>Overview</small></h1>
             <ol class="breadcrumb">
-              <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
+              <li class="active"><a href="/"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+              <li class="active"> Orders</li>
             </ol>
             <!-- <div class="alert alert-success alert-dismissable">
               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>

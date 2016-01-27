@@ -14,8 +14,13 @@
 Route::get('/', function () {
     return \View::make('/admin/home/index')->with('title', 'Home');
 });
-Route::get('/home', function(){
-	return 'This is home';
+
+Route::get('/products', function(){
+	return \View::make('/admin/products/index')->with('title', 'Products');
+});
+
+Route::get('/orders', function(){
+	return \View::make('/admin/orders/index')->with('title', 'Orders');
 });
 
 // Route::get('/home', function(){

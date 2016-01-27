@@ -27,13 +27,10 @@
     <div id="wrapper">
         @include('admin.layouts.sidebar')
         @yield('content')
-    </div><!-- /#wrapper -->
 
-    <!-- JavaScript -->
+        
+    </div>
 
-
-
-    <!-- Page Specific Plugins -->
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
      {!! Html::script('http://cdn.oesmith.co.uk/morris-0.4.3.min.js') !!}

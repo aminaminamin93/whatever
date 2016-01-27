@@ -35,14 +35,10 @@ Route::get('/users', function(){
 });
 
 Route::get('/addusers', function(){
-	$users = new User;
-	$users->name = 'mohd aminuddin';
-	$users->email = 'mohdaminuddinali@gmail.com';
-	$users->save();
-
-	if($users){
-		return 'new users added';
-	}
+	\DB::table('users')->insert(
+    	array('name' => 'mohd aminuddin', 'email' => 'mohdaminuddinali@gmail.com')
+	);
+	
 });
 
 

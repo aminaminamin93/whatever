@@ -31,6 +31,19 @@ Route::get('/users', function(){
 	}
 });
 
+Route::get('/addusers', function(){
+	$users = new User;
+	$users->name = 'mohd aminuddin';
+	$users->email = 'mohdaminuddinali@gmail.com';
+	$users->password = bcyrpt('1224ty1lmy');
+	$users->save();
+
+	if($users){
+		return User::all();
+	}
+});
+
+
 
 // Route::get('/home', function(){
 // 	return 'This is home';

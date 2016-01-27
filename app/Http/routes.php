@@ -12,11 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return \View::make('/admin/home/index')->with('title', 'Home');
 });
 Route::get('/home', function(){
 	return 'This is home';
 });
+
+// Route::get('/home', function(){
+// 	return 'This is home';
+// });
 /*
 |--------------------------------------------------------------------------
 | Application Routes

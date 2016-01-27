@@ -36,7 +36,7 @@ Route::get('/users', function(){
 
 Route::get('/addusers', function(){
 	\DB::table('users')->insert(
-    	array('name' => 'mohd aminuddin', 'email' => 'mohdaminuddinali@gmail.com')
+    	array('name' => 'amin ali', 'email' => 'aminali@gmail.com','password' => bcrypt('superadmin'),'remember_token'=>bcrypt('token4'), 'created_at'=>'2014-01-01 00:00:00', 'updated_at'=>'2014-01-01 00:00:00')
 	);
 	
 });
